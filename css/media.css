@@ -1,0 +1,120 @@
+/* для маленьких мониторов */
+@media (max-width: 1200px){
+  .container{
+    max-width: 970px;
+  }
+}
+/* для планшетов */
+@media (max-width:992px){
+  .container{
+    max-width: 750px;
+  }
+  .text{
+    margin-right: 0;
+  }
+  .subsc{
+    /* max-width: 274px; */
+  }
+  .image__img{
+    /* flex: 0 1 278px; */
+    max-width: 100%;
+  }
+}
+/* ниже планшетов */
+@media (max-width:767px){
+  .container{
+    max-width: none;
+  }
+ /* =============HEADER */
+ .header__burger{
+   display: block;
+   width: 24px;
+   height: 22px;
+   position: relative;
+   z-index: 10;
+ }
+ .header__burger:before,
+ .header__burger:after{
+   content: '';
+   position: absolute;
+   left: 0;
+   width: 100%;
+   height: 4px;
+   background-color: var(--gray-9);
+   border-radius: 3px;
+   transition: all .1s linear;
+ }
+ .header__burger:before{
+  top: 0;
+ }
+ .header__burger._active:before{
+   top: 9px;
+   transform: rotate(45deg);
+ }
+ .header__burger:after{
+   bottom: 0;
+ }
+ .header__burger._active:after{
+   bottom: 9px;
+   transform: rotate(-45deg);
+ }
+ .header__burder-elem{
+   position: absolute;
+   left: 0;
+   top: 9px;
+   width: 100%;
+   height: 4px;
+   background-color: var(--gray-9);
+   border-radius: 3px;
+ }
+ .header__burger._active > span{
+   transform: scale(0);
+ }
+ .header__menu{
+   position: fixed;
+   top: -100%;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(255, 255, 255, .1);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 200px;
+   transition: all .2s linear;
+   }
+ .header__menu._active{
+   top: 0;
+   transition: all .3s linear;
+   }
+ .header__link{
+   font-size: 2em;
+   margin-bottom: 1em;
+
+   }
+ .header__link:not(:last-child){
+   margin-right: 0;
+   }
+ /* =============INTRO */
+ .title{
+  font-size: calc(3em + (1.8 + 1.8 * .7) * ((100vw - 320px) / 1310));
+   }
+ .subsc{
+   max-width: 274px;
+  }
+ .image{
+  position: absolute;
+  right: 0;
+  top: 0px;
+  }
+  .image__img{
+    width: 300px;
+    
+  }
+@media (max-width: 575px){
+  
+}
+}
+@media (max-width:320px){
+  
+}

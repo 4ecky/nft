@@ -113,7 +113,9 @@ body {
   background-color: var(--black-1);
   color: var(--main);
 }
-
+body._lock{
+  overflow: hidden;
+}
 .container {
   max-width: 1310px;
   width: 100%;
@@ -137,6 +139,7 @@ body {
   letter-spacing: 5%;
   position: relative;
   padding-left: 48px;
+  z-index: 11;
 }
 
 .logo:before {
@@ -190,6 +193,7 @@ body {
   height: 4px;
   background-color: var(--gray-9);
   border-radius: 4px;
+  transition: all .2s linear;
 }
 
 .burger:before {
@@ -208,6 +212,7 @@ body {
   height: 4px;
   border-radius: 4px;
   background-color: var(--gray-9);
+  transition: all .2s linear;
 }
 
 .burger._active .burger__elem {

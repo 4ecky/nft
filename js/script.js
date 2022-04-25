@@ -48,6 +48,7 @@ burger.addEventListener('click', mobileMenu);
 function mobileMenu() {
   burger.classList.toggle('_active');
   menuNav.classList.toggle('_open');
+  document.body.classList.toggle('_lock')
 }
 
 // при нажатии на ссылку, меню закрывается
@@ -56,6 +57,7 @@ navLink.forEach(n => n.addEventListener('click', closeMenu));
 function closeMenu() {
   burger.classList.toggle('_active');
   menuNav.classList.toggle('_open');
+  document.body.classList.remove('_lock')
 }
 
 // плавная прокрутка к разделам

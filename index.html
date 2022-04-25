@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Varela+Round&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="/css/swiper.min.css">
+  <link rel="stylesheet" href="/css/fontawesome.css">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/media.css">
   <title>NFT</title>
@@ -20,45 +21,47 @@
     <div class="container">
       <div class="header__inner">
         <a class="logo" href="#">nftlanding</a>
-        <div class="header__burger">
-          <span class="header__burder-elem"></span>
-        </div>
-        <nav class="header__menu">
-          <a class="header__link" href="#">Features</a>
-          <a class="header__link" href="#">About</a>
-          <a class="header__link" href="#">Launch</a>
-          <a class="header__link" href="#">Sign&nbsp;Up</a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#features">Features</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#first-offer">About</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#launch">Launch</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Sign Up</a>
+            </li>
+          </ul>
         </nav>
+        <div class="burger">
+          <span class="burger__elem"></span>
+        </div>
+      </div>
+      <div class="main__offer" id="first-offer">
+        <div class="main__inner">
+          <div class="main__text">
+            <h2 class="main__suptitle">Launching Soon</h2>
+            <h1 class="main__title">An NFT like no other</h1>
+            <p class="main__subs">Don’t miss out on the release of our new NFT. Sign up below to receive updates when we go live.</p>
+            <a class="button" href="#">Sign Up</a>
+          </div>
+          <div class="main__image"><img class="main__img" src="/img/header/01.svg" alt="main-offer"></div>
+        </div>
       </div>
     </div>
   </header>
-
-  <section class="intro">
-    <div class="container">
-      <div class="intro__inner">
-        <div class="text">
-          <h2 class="suptitle">Launching Soon</h2>
-          <h1 class="title">An&nbsp;NFT like <br>no&nbsp;other</h1>
-          <p class="subsc">Don&rsquo;t miss out on&nbsp;the release of&nbsp;our new NFT. Sign up&nbsp;below
-            to&nbsp;receive updates when we&nbsp;go&nbsp;live.</p>
-          <a class="button" href="#">Sign&nbsp;Up</a>
-        </div>
-        <div class="image">
-          <img class="image__img" src="/img/intro/01.png" alt="no reload">
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="free">
+  <section class="free" id="features">
     <div class="container">
       <div class="free__inner">
         <div class="free__text">
           <a class="free__logo" href="#">
             <img class="free__logo-img" src="/img/free/logo-black.png" alt="no reload"></a>
           <h2 class="free__title">Free NFT for early birds</h2>
-          <p class="free__subsc">Sign up&nbsp;today and you&rsquo;ll get a&nbsp;free NFT when we&nbsp;launch.</p>
+          <p class="free__subsc">Sign up today and you’ll get a free NFT when we launch.</p>
         </div>
         <div class="free__cards">
           <div class="card card--tiny-white">
@@ -107,30 +110,85 @@
       </div>
     </div>
   </section>
-
   <div class="brands">
     <div class="container">
       <div class="brands__inner">
-        <a class="brands__item" href="#">
-          <img src="#" alt="" class="brands__item-img">
-          Boomerang</a>
-        <a class="brands__item" href="#">
-          <img src="#" alt="" class="brands__item-img">
-          Blimp</a>
-        <a class="brands__item" href="#">
-          <img src="#" alt="" class="brands__item-img">
-          qrco</a>
-        <a class="brands__item" href="#">
-          <img src="#" alt="" class="brands__item-img">
-          OpenDoor</a>
-        <a class="brands__item" href="#">
-          <img src="#" alt="" class="brands__item-img">
-          Droplet</a>
+        <div class="brands__item">
+          <svg display="none">
+            <symbol id="boomerang" viewBox="0 0 41 42">
+              <g id="#999999ff">
+                <path
+                  d=" M 23.58 8.60 C 27.32 5.44 31.05 1.67 36.00 0.62 C 39.14 -0.01 40.64 3.44 40.60 6.01 C 40.89 14.49 38.15 22.71 35.34 30.60 C 33.91 34.14 32.77 38.16 29.65 40.62 C 26.53 42.45 23.30 39.97 20.87 38.14 C 14.46 32.79 7.89 27.41 0.00 24.41 L 0.00 24.13 C 6.03 24.80 11.80 26.85 17.81 27.64 C 22.11 28.18 26.85 29.01 30.90 27.03 C 33.39 24.92 34.00 20.68 31.69 18.19 C 28.95 15.73 24.88 15.70 21.53 16.73 C 17.16 18.20 13.87 21.83 9.30 22.84 C 13.23 17.34 18.65 13.16 23.58 8.60 Z" />
+              </g>
+            </symbol>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="#boomerang"></use>
+          </svg>
+          <a class="brands__link" href="#">Boomerang</a>
+        </div>
+        <div class="brands__item">
+          <svg display="none">
+            <symbol id="blimp" viewBox="0 0 42 41">
+              <g id="#999999ff">
+                <path
+                  d=" M 0.91 6.10 C 1.79 1.83 6.77 -0.91 10.84 0.76 C 13.21 1.36 14.35 3.60 15.68 5.41 C 24.65 4.25 34.07 10.20 35.83 19.28 C 38.43 29.40 30.42 40.19 20.07 41.00 L 17.31 41.00 C 11.38 40.58 5.73 37.14 2.92 31.86 C -0.33 26.38 0.17 19.44 3.04 13.92 C 1.48 11.65 0.00 8.94 0.91 6.10 M 16.04 28.17 C 17.58 27.17 19.03 25.68 21.00 25.74 C 22.97 25.54 24.34 27.13 25.85 28.08 C 27.20 24.37 24.14 19.77 19.99 20.73 C 16.41 21.21 15.50 25.15 16.04 28.17 Z" />
+                <path
+                  d=" M 33.37 1.16 C 36.35 -1.11 41.21 1.25 41.35 4.99 C 41.87 8.70 37.36 11.90 34.07 9.94 C 30.51 8.54 30.28 3.20 33.37 1.16 Z" />
+              </g>
+            </symbol>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="#blimp"></use>
+          </svg>
+          <a class="brands__link" href="#">Blimp</a>
+        </div>
+        <div class="brands__item">
+          <svg display="none">
+            <symbol id="droplet" viewBox="0 0 42 42">
+              <g id="#999999ff">
+                <path
+                  d=" M 15.09 1.98 C 19.26 -0.09 25.10 -0.05 28.29 3.75 C 32.10 8.18 31.54 14.61 29.89 19.83 C 29.26 22.87 27.43 26.54 29.54 29.35 C 33.01 30.83 36.67 27.80 40.27 28.71 C 43.26 31.73 40.83 36.83 37.42 38.42 C 31.29 41.62 23.67 42.24 17.14 39.94 C 14.51 39.18 12.89 35.98 14.77 33.67 C 18.46 28.89 23.43 25.04 25.95 19.40 C 21.11 19.78 17.69 23.62 13.46 25.52 C 10.07 27.08 5.82 28.58 2.36 26.42 C -0.07 23.85 0.98 19.97 2.16 17.06 C 4.85 10.95 8.94 4.99 15.09 1.98 Z" />
+              </g>
+            </symbol>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="#droplet"></use>
+          </svg>
+          <a class="brands__link" href="#">qrco</a>
+        </div>
+        <div class="brands__item">
+          <svg display="none">
+            <symbol id="bomerang-duplicate" viewBox="0 0 41 42">
+              <g id="#999999ff">
+                <path
+                  d=" M 23.58 8.60 C 27.32 5.44 31.05 1.67 36.00 0.62 C 39.14 -0.01 40.64 3.44 40.60 6.01 C 40.89 14.49 38.15 22.71 35.34 30.60 C 33.91 34.14 32.77 38.16 29.65 40.62 C 26.53 42.45 23.30 39.97 20.87 38.14 C 14.46 32.79 7.89 27.41 0.00 24.41 L 0.00 24.13 C 6.03 24.80 11.80 26.85 17.81 27.64 C 22.11 28.18 26.85 29.01 30.90 27.03 C 33.39 24.92 34.00 20.68 31.69 18.19 C 28.95 15.73 24.88 15.70 21.53 16.73 C 17.16 18.20 13.87 21.83 9.30 22.84 C 13.23 17.34 18.65 13.16 23.58 8.60 Z" />
+              </g>
+            </symbol>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="#boomerang"></use>
+          </svg>
+          <a class="brands__link" href="#">OpenDoor</a>
+        </div>
+        <div class="brands__item">
+          <svg display="none">
+            <symbol id="droplet-dublicate" viewBox="0 0 42 42">
+              <g id="#999999ff">
+                <path
+                  d=" M 15.09 1.98 C 19.26 -0.09 25.10 -0.05 28.29 3.75 C 32.10 8.18 31.54 14.61 29.89 19.83 C 29.26 22.87 27.43 26.54 29.54 29.35 C 33.01 30.83 36.67 27.80 40.27 28.71 C 43.26 31.73 40.83 36.83 37.42 38.42 C 31.29 41.62 23.67 42.24 17.14 39.94 C 14.51 39.18 12.89 35.98 14.77 33.67 C 18.46 28.89 23.43 25.04 25.95 19.40 C 21.11 19.78 17.69 23.62 13.46 25.52 C 10.07 27.08 5.82 28.58 2.36 26.42 C -0.07 23.85 0.98 19.97 2.16 17.06 C 4.85 10.95 8.94 4.99 15.09 1.98 Z" />
+              </g>
+            </symbol>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="#droplet-dublicate"></use>
+          </svg>
+          <a class="brands__link" href="#">Droplet</a>
+        </div>
       </div>
     </div>
   </div>
-
-  <section class="auction">
+  <section class="auction" id="launch">
     <div class="container">
       <div class="auction__inner">
         <h2 class="auction__title">LE&nbsp;Super Rare Auction</h2>
@@ -141,93 +199,93 @@
         <div class="auction__slider swiper">
           <div class="auction__slider-inner swiper-wrapper">
             <div class="auction__slider-slide swiper-slide">
-              <div class="card">
-                <div class="card__image">
+              <div class="card card--medium">
+                <div class="card__image card--image--medium">
                   <a class="card__image-link" href="#">
-                    <img class="card__img" src="/img/cards/medium/01.png" alt="no reload">
+                    <img class="card__img card__img--medium" src="/img/cards/medium/01.png" alt="no reload">
                   </a>
                 </div>
-                <div class="card__options">
+                <div class="card__options card__options--medium">
                   <div class="card__option">
-                    <a class="card__series" href="#">Gloop Series</a>
-                    <a class="card__status" href="#">Top bid</a>
+                    <a class="card__series card__series--medium" href="#">Gloop Series</a>
+                    <a class="card__status card__status--medium" href="#">Top bid</a>
                   </div>
-                  <div class="card__option">
-                    <a class="card__name" href="#">Purple Man</a>
-                    <a class="card__cost" href="#">2.99&nbsp;ETH</a>
+                  <div class="card__option card__option--medium">
+                    <a class="card__name card__name--medium" href="#">Purple Man</a>
+                    <a class="card__cost card__cost--medium" href="#">2.99&nbsp;ETH</a>
                   </div>
-                  <div class="card__option">
-                    <a class="card__id" href="#">#12983</a>
-                    <a class="card__deadline" href="#">1&nbsp;day left</a>
+                  <div class="card__option card__option--medium">
+                    <a class="card__id card__id--medium" href="#">#12983</a>
+                    <a class="card__deadline card__deadline--medium" href="#">1&nbsp;day left</a>
                   </div>
                 </div>
               </div>
             </div>
             <div class="auction__slider-slide swiper-slide">
-              <div class="card">
-                <div class="card__image">
-                  <a class="card__image-link" href="#">
-                    <img class="card__img" src="/img/cards/medium/02.png" alt="no reload">
+              <div class="card card--medium">
+                <div class="card__image card__image--medium">
+                  <a class="card__image-link card__image-link--medium" href="#">
+                    <img class="card__img card__img--medium" src="/img/cards/medium/02.png" alt="no reload">
                   </a>
                 </div>
-                <div class="card__options">
-                  <div class="card__option">
-                    <a class="card__series" href="#">Gloop Series</a>
-                    <a class="card__status" href="#">Top bid</a>
+                <div class="card__options card__options--medium">
+                  <div class="card__option card__option--medium">
+                    <a class="card__series card__series--medium" href="#">Gloop Series</a>
+                    <a class="card__status card__status--medium" href="#">Top bid</a>
                   </div>
-                  <div class="card__option">
-                    <a class="card__name" href="#">Beige</a>
-                    <a class="card__cost" href="#">2.99&nbsp;ETH</a>
+                  <div class="card__option card__option--medium">
+                    <a class="card__name card__name--medium" href="#">Beige</a>
+                    <a class="card__cost card__cost--medium" href="#">2.99&nbsp;ETH</a>
                   </div>
-                  <div class="card__option">
-                    <a class="card__id" href="#">#12983</a>
-                    <a class="card__deadline" href="#">1&nbsp;day left</a>
+                  <div class="card__option card__option--medium">
+                    <a class="card__id card__id--medium" href="#">#12983</a>
+                    <a class="card__deadline card__deadline--medium" href="#">1&nbsp;day left</a>
                   </div>
                 </div>
               </div>
             </div>
             <div class="auction__slider-slide swiper-slide">
-              <div class="card">
-                <div class="card__image">
-                  <a class="card__image-link" href="#">
-                    <img class="card__img" src="/img/cards/medium/03.png" alt="no reload">
+              <div class="card card--medium">
+                <div class="card__image card__image--medium">
+                  <a class="card__image-link card__image-link--medium" href="#">
+                    <img class="card__img card__img--medium" src="/img/cards/medium/03.png" alt="no reload">
                   </a>
                 </div>
-                <div class="card__options">
-                  <div class="card__option">
-                    <a class="card__series" href="#">Gloop Series</a>
-                    <a class="card__status" href="#">Top bid</a>
+                <div class="card__options card__options--medium">
+                  <div class="card__option card__option--medium">
+                    <a class="card__series card__series--medium" href="#">Gloop Series</a>
+                    <a class="card__status card__status--medium" href="#">Top bid</a>
                   </div>
-                  <div class="card__option">
-                    <a class="card__name" href="#">Red Man</a>
-                    <a class="card__cost" href="#">2.99&nbsp;ETH</a>
+                  <div class="card__option card__option--medium">
+                    <a class="card__name card__name--medium" href="#">Red Man</a>
+                    <a class="card__cost card__cost--medium" href="#">2.99&nbsp;ETH</a>
                   </div>
-                  <div class="card__option">
-                    <a class="card__id" href="#">#12983</a>
-                    <a class="card__deadline" href="#">1&nbsp;day left</a>
+                  <div class="card__option card__option--medium">
+                    <a class="card__id card__id--medium" href="#">#12983</a>
+                    <a class="card__deadline card__deadline--medium" href="#">1&nbsp;day left</a>
                   </div>
                 </div>
               </div>
             </div>
             <div class="auction__slider-slide swiper-slide">
-              <div class="card">
-                <div class="card__image">
-                  <a class="card__image-link" href="#"><img class="card__img" src="/img/cards/medium/04.png"
-                      alt="no reload">
+              <div class="card card--medium">
+                <div class="card__image card__image--medium">
+                  <a class="card__image-link card__image-link--medium" href="#"><img class="card__img card__img--medium"
+                      src="/img/cards/medium/04.png" alt="no reload">
                   </a>
                 </div>
-                <div class="card__options">
-                  <div class="card__option">
-                    <a class="card__series" href="#">Gloop Series</a>
-                    <a class="card__status" href="#">Top bid</a>
+                <div class="card__options card__options--medium">
+                  <div class="card__option card__option--medium">
+                    <a class="card__series card__series--medium" href="#">Gloop Series</a>
+                    <a class="card__status card__status--medium" href="#">Top bid</a>
                   </div>
-                  <div class="card__option">
-                    <a class="card__name" href="#">Green</a>
-                    <a class="card__cost" href="#">2.99&nbsp;ETH</a>
+                  <div class="card__option card__option--medium">
+                    <a class="card__name card__name--medium" href="#">Green</a>
+                    <a class="card__cost card__cost--medium" href="#">2.99&nbsp;ETH</a>
                   </div>
-                  <div class="card__option">
-                    <a class="card__id" href="#">#12983</a>
-                    <a class="card__deadline" href="#">1&nbsp;day left</a>
+                  <div class="card__option card__option--medium">
+                    <a class="card__id card__id--medium" href="#">#12983</a>
+                    <a class="card__deadline card__deadline--medium" href="#">1&nbsp;day left</a>
                   </div>
                 </div>
               </div>
@@ -237,7 +295,6 @@
       </div>
     </div>
   </section>
-
   <section class="release release--margin">
     <div class="container">
       <div class="release__inner">
@@ -272,10 +329,9 @@
       </div>
     </div>
   </section>
-
-  <section class="release release--item-girl">
+  <section class="release release--item-card">
     <div class="container">
-      <div class="release__inner release__inner--item-girl">
+      <div class="release__inner release__inner--item-card">
         <div class="release__offer">
           <div class="card card--big">
             <div class="card__image">
@@ -299,12 +355,12 @@
             </div>
           </div>
         </div>
-        <div class="release__text">
+        <div class="release__text release__text--card">
           <h2 class="release__title">Initial Release 4/11</h2>
-          <div class="release__text-subsc release__text-subsc--item-girl">
+          <div class="release__text-subsc release__text-subsc--item-card">
             <p class="release__subsc">
               We&nbsp;have released four limited edition NFTs early which can be&nbsp;bid on&nbsp;via
-              <a class="release__subsc-link release__subsc-link--item-girl" href="#">OpenSea</a>.
+              <a class="release__subsc-link release__subsc-link--item-card" href="#">OpenSea</a>.
             </p>
             <p class="release__subsc">
               These will be&nbsp;the only four of&nbsp;these NFTs we&nbsp;ever make, so&nbsp;be&nbsp;sure not
@@ -317,8 +373,7 @@
       </div>
     </div>
   </section>
-
-  <div class="benefits benefits--margin">
+  <div class="benefits benefits--margin" id="terms">
     <div class="container">
       <div class="benefits__inner">
         <div class="benefits__item">
@@ -358,25 +413,23 @@
       </div>
     </div>
   </div>
-
-  <section class="intro intro--bottom">
+  <section class="offer" id="second-offer">
     <div class="container">
-      <div class="intro__inner">
-        <div class="text text--bottom">
-          <h2 class="suptitle">Launching Soon</h2>
-          <h2 class="title title--bottom">An NFT like no other</h2>
-          <p class="subsc">Don&rsquo;t miss out on&nbsp;the release of&nbsp;our new NFT. Sign up&nbsp;below
-            to&nbsp;receive updates when we&nbsp;go live.</p>
-          <a class="button" href="#">Sign Up</a>
-        </div>
-        <div class="image image--bottom">
-          <img class="image__img image__img--bottom" src="/img/intro-bottom/01.png" alt="no reload">
+      <div class="main__offer main__offer--second">
+        <div class="main__inner main__inner--second">
+          <div class="main__text main__text--second">
+            <h2 class="main__suptitle">Launching Soon</h2>
+            <h1 class="main__title main__title--second">An NFT like no other</h1>
+            <p class="main__subs">Don’t miss out on the release of our new NFT. Sign up below to receive updates when we go live.</p>
+            <a class="button" href="#">Sign Up</a>
+          </div>
+          <div class="main__image main__image--second">
+            <img class="main__img main__img--second" src="/img/offer/02.svg" alt="main-offer">
+          </div>
         </div>
       </div>
-
     </div>
   </section>
-
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
@@ -385,58 +438,68 @@
           <p class="footer__general-subsc">
             Exclusive NFT Collection
           </p>
+          <div class="footer__socials">
+            <a class="footer__social-link fa-brands fa-facebook" href="https://en-gb.facebook.com/" target="_blank"></a>
+            <a class="footer__social-link fa-brands fa-twitter" href="https://twitter.com/?lang=en" target="_blank"></a>
+            <a class="footer__social-link fa-brands fa-instagram" href="https://www.instagram.com/?hl=en" target="_blank"></a>
+            <a class="footer__social-link fa-brands fa-tiktok" href="https://www.tiktok.com/following" target="_blank"></a>
+          </div>
           <div class="footer__social-links"></div>
         </div>
         <div class="footer__sections">
-          <div class="footer__section">
-            <h2 class="footer__title">About</h2>
-            <ul class="footer__list">
-              <li class="footer__list-item">
-                <a class="footer__item-link" href="#">About</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__item-link" href="#">Terms</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__item-link" href="#">Legal</a>
-              </li>
-            </ul>
+          <div class="footer__sections-row">
+            <div class="footer__section">
+              <h2 class="footer__title">About</h2>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a class="footer__item-link" href="#second-offer">About</a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__item-link" href="#terms">Terms</a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__item-link" href="#features">Legal</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__section">
+              <h2 class="footer__title">NFT</h2>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a class="footer__item-link" href="#">OpenSea</a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__item-link" href="#">Maker</a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__item-link" href="#">Learn</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="footer__section">
-            <h2 class="footer__title">NFT</h2>
-            <ul class="footer__list">
-              <li class="footer__list-item">
-                <a class="footer__item-link" href="#">OpenSea</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__item-link" href="#">Maker</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__item-link" href="#">Learn</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__section">
-            <h2 class="footer__title">Contact</h2>
-            <ul class="footer__list">
-              <li class="footer__list-item">
-                <a class="footer__item-link" href="#">Press</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__item-link" href="#">Support</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__section">
-            <h2 class="footer__title">Social</h2>
-            <ul class="footer__list">
-              <li class="footer__list-item">
-                <a class="footer__item-link" href="#">Twitter</a>
-              </li>
-              <li class="footer__list-item">
-                <a class="footer__item-link" href="#">Instagram</a>
-              </li>
-            </ul>
+          <div class="footer__sections-row">
+            <div class="footer__section">
+              <h2 class="footer__title">Contact</h2>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a class="footer__item-link" href="#">Press</a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__item-link" href="#">Support</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__section">
+              <h2 class="footer__title">Social</h2>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a class="footer__item-link" href="https://twitter.com/?lang=en" target="_blank">Twitter</a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__item-link" href="https://www.instagram.com/?hl=en" target="_blank">Instagram</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -447,7 +510,6 @@
       </div>
     </div>
   </footer>
-
   <script src="/js/swiper-bundle.min.js"></script>
   <script src="/js/script.js"></script>
 </body>
